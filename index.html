@@ -181,87 +181,7 @@
 
     <link rel="stylesheet " href="css/style.css" media="all" as="style ">
 
-    <style>
-        @media (max-width: 767px) {
-            .modal-fullscreen-xs-down {
-                padding: 0 !important;
-            }
-            .modal-fullscreen-xs-down .modal-dialog {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            .modal-fullscreen-xs-down .modal-content {
-                height: auto;
-                min-height: 100%;
-                border: 0 none;
-                border-radius: 0;
-                box-shadow: none;
-            }
-        }
-        
-        @media (max-width: 991px) {
-            .modal-fullscreen-sm-down {
-                padding: 0 !important;
-            }
-            .modal-fullscreen-sm-down .modal-dialog {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            .modal-fullscreen-sm-down .modal-content {
-                height: auto;
-                min-height: 100%;
-                border: 0 none;
-                border-radius: 0;
-                box-shadow: none;
-            }
-        }
-        
-        @media (max-width: 1199px) {
-            .modal-fullscreen-md-down {
-                padding: 0 !important;
-            }
-            .modal-fullscreen-md-down .modal-dialog {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            .modal-fullscreen-md-down .modal-content {
-                height: auto;
-                min-height: 100%;
-                border: 0 none;
-                border-radius: 0;
-                box-shadow: none;
-            }
-        }
-        
-        .modal-fullscreen {
-            padding: 0 !important;
-        }
-        
-        .modal-fullscreen .modal-dialog {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .modal-fullscreen .modal-content {
-            height: auto;
-            min-height: 100%;
-            border: 0 none;
-            border-radius: 0;
-            box-shadow: none;
-        }
-        
-        .btn-open-modal {
-            margin-bottom: 0.5em;
-        }
-    </style>
+
     <style>
         .rosa {
             color: #F06365;
@@ -317,25 +237,18 @@
 
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-safety-blue.css">
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="application/json" src="js/jquery-3-5-0.js"></script>
 
-
+    <!--
     <script>
         $(document).ready(function() {
             $("#cucuparty1-2").load("afterParty1-2.html");
         });
     </script>
-    <!-- <div id="cucuparty1-2"> </div> -->
+    <div id="cucuparty1-2"> </div> -->
 
 </head>
 
@@ -348,16 +261,13 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <div id="cucuparty1-2"> </div>
-                    <!-- <iframe src="https://dragvesti.xiiber.com/menu.html " name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>-->
+                    <iframe src="index.html" name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>
                 </div>
             </div>
-
-
         </div>
     </div>
 
-    <button data-toggle="modal" data-target="#modal-fullscreen2"> <a class="w3-button  w3-circle  " style="position:fixed;top:110px;right:80px; "><i class="fas fa-ellipsis-v"></i></a> </button>
+    <!-- <button data-toggle="modal" data-target="#modal-fullscreen2"> <a class="w3-button  w3-circle  " style="position:fixed;top:110px;right:80px; "><i class="fas fa-ellipsis-v"></i>XX</a> </button> -->
 
     <!-- Modal-Fullscreen -->
     <div class="modal fade modal-fullscreen " id="modal-fullscreen2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -365,19 +275,9 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-
-
-                    <div w3-include-html="afterParty1-2.html"></div>
-
-                    <script>
-                        includeHTML();
-                    </script>
                     <!-- <iframe src="afterParty1-2.html" name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe> -->
                 </div>
             </div>
-
-
         </div>
     </div>
 
@@ -417,20 +317,14 @@
     </nav>
 
     <!-- Top menu on small screens -->
-    <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
-        <a href="javascript:void(0)" class="w3-left  w3-white w3-padding" data-toggle="modal" data-target="#modal-fullscreen">⁝</a>
+    <header class="w3-container w3-top w3-white w3-xlarge w3-padding">
+        <!-- <a href="javascript:void(0)" class="w3-left  w3-white w3-padding" data-toggle="modal" data-target="#modal-fullscreen">⁝</a> -->
         <span class="w3-left w3-padding">Fan art</span>
-
         <a href="javascript:void(0)" class="w3-right w3-white" onclick="w3_open()">☰</a>
-
-
     </header>
 
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-
-
 
     <!-- Modal for full size images on click-->
     <div class="w3-container">
@@ -443,95 +337,28 @@
         </div>
     </div>
     </div>
-
-
     <!-- End page content -->
     </div>
 
 
     <div>
         <div id="preloder" class=" background-icon-black-1B1C24">
-
             <div class="  w3-center ">
-
                 <div class="container-name  ">
                     <div class="box ">
-
 
 
                     </div>
                 </div>
             </div>
-
             <div class="loader lazy"> </div>
         </div>
     </div>
     </div>
 
-    <!-- <div id="div4"> </div> -->
 
     <div id="tab-pure-css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <style>
-            .tab-controls {
-                color: none
-            }
-            
-            @media (min-width: 40rem) {
-                .tab-controls {
-                    border: none;
-                }
-            }
-            
-            .tab-controls li {
-                display: block;
-            }
-            
-            @media (min-width: 40rem) {
-                .tab-controls li {
-                    border: none;
-                }
-                .tab-controls li:after {
-                    content: "";
-                    position: absolute;
-                    transform: translateY(-50%);
-                }
-                .tab-controls li:last-of-type:after {
-                    content: none;
-                }
-            }
-            
-            .tab-controls label {
-                text-decoration: none;
-                transition: 0.3s ease-in-out;
-                cursor: pointer;
-            }
-            
-            .tab-input {
-                display: none;
-            }
-            
-            .tab-item {
-                position: absolute;
-                visibility: hidden;
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            
-            .tab-input:checked+.tab-item {
-                position: static;
-                visibility: visible;
-                opacity: 1;
-                transform: translateY(0);
-                transition: 0.3s ease-in-out;
-            }
-            
-            @media (min-width: 40rem) {
-                .tab-item {
-                    text-decoration: none;
-                }
-            }
-        </style>
 
         <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
         <script>
@@ -539,10 +366,6 @@
                 this.classList.toggle('active');
             });
         </script>
-
-
-
-
 
 
         <div class="modal fade modal-fullscreenx " id="alertas " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel " aria-hidden="true ">
@@ -558,9 +381,6 @@
         </div>
 
 
-
-
-
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js'></script>
 
@@ -571,14 +391,14 @@
 
             <div>
                 <br><br><br>
-                <label for="tab-1">CucuConfessions</label>
+                <!-- <label for="tab-1">CucuConfessions</label>
                 <label for="tab-2">#CucuFantarts</label>
                 <label for="tab-3">Meet and greet </label>
                 <label for="tab-4">En el Teatro Hipódromo Condesa</label>
                 <label for="tab-5">After Party en el Arrabal</label>
                 <label for="tab-6">Material de promoción</label>
                 <label for="tab-7">Notas relacionadas</label>
-                <label for="tab-8">Playlist</label>
+                <label for="tab-8">Playlist</label> -->
                 <br>
                 <div>
                     <input id="tab-1" name="tab" type="radio" class="tab-input" checked />
@@ -590,25 +410,22 @@
                                 <a href="# " class="w3-bar-item  w3-hover-pink ">«</a>
                                 <a href="# " class="w3-bar-item w3-pink w3-hover-pink  ">1</a>
                                 <a href="# " class="w3-bar-item w3-hover-pink ">2</a>
+                                <label for="tab-3">Meet and greet<img src="camara.svg" width="32px " height="32px " alt="camara" cñass="w3-bar-item w3-pink w3-hover-pink "></label>
                                 <a href="# " class="w3-bar-item w3-hover-pink ">3</a>
-                                <a href="# " class="w3-bar-item  w3-hover-pink ">4</a>
                                 <a href="# " class="w3-bar-item  w3-hover-pink ">»</a>
                             </div>
                         </div>
 
                         <!-- partial:index.partial.html -->
-                        <!-- Buttons --><button class="btn btn-primary btn-lg btn-open-modal" data-toggle="modal" data-target="#modal-fullscreen">Fullscreen modal </button>
+                        <!-- Buttons <button class="btn btn-primary btn-lg btn-open-modal" data-toggle="modal" data-target="#modal-fullscreen">Fullscreen modal </button> -->
                         <!-- Modal Fullscreen -->
                         <div class="modal fade modal-fullscreen" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
-        </button>
+                                    <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                         <h4 class="modal-title" id="myModalLabel3">Modal title</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <div w3-include-html="afterParty2-2.html"></div>
-
                                         <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
                                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
                                         <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
@@ -630,394 +447,19 @@
                     <input id="tab-2" name="tab" type="radio" class="tab-input" />
                     <div class="tab-item">
                         <main class="container-publicacionesX w3-containerX ">
-                            <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> #CucuFantarts</h2>
-
-                            <div style="list-style-type: none;margin-left: 10px; margin-right: 13px; ">
-                                
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (1).gif" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (1).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                               
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (2).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (2).png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (3).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (3).png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (4).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (4).png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (5).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (5).png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (6).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (6).png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (8).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (8).png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                               
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (11).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (12).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                               
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (14).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                               
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (17).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                               
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (19).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (20).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (21).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (22).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (23).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (24).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (25).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (26).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (27).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (28).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (29).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (30).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (32).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (33).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (34).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (35).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (36).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (37).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                               
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (39).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (40).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (41).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                               
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (43).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                
-                                                           
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (51).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (52).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (53).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (54).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (55).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (56).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (57).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (58).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (59).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (60).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (61).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (62).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (63).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (64).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (65).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (66).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (67).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (68).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (69).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cucu (70).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cynthia lee fontaine cast rupauls drag race.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cynthia lee fontaine y katya.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cynthia_lee.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/cynthia-lee-fontaine.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/drankota cynthia lee fontaine.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/drankota cynthia lee fontaine.png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/meet and great cdmx.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/playera de cynthia lee fontaine are you ready for my cucu.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy "
-                                                class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/rupauls-drage-race-season-8.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/viewing party premiere rupauls drag race.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-
-                                <div class="clearfix "></div>
-
-
-                            </div>
+                            <div w3-include-html="cucuFanarts.html "></div>
                         </main>
                     </div>
 
-                    <input id="tab-3" name="tab" type="radio" class="tab-input" />
-                    <div class="tab-item">
+                    <input id="tab-3 " name="tab " type="radio " class="tab-input " />
+                    <div class="tab-item ">
                         <main class="container-publicacionesX w3-containerX ">
                             <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> Meet and greet</h2>
-
-                            <div style="list-style-type: none;margin-left: 10px; margin-right: 13px; ">
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/chynthia lee fontaine art.png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                            </div>
+                            <div w3-include-html="meet-and-greet.html "></div>
                         </main>
                     </div>
+
+
 
                     <input id="tab-4" name="tab" type="radio" class="tab-input" />
                     <div class="tab-item">
@@ -1036,12 +478,16 @@
 
                     <input id="tab-5" name="tab" type="radio" class="tab-input" />
                     <div class="tab-item">
-                        <div id="cucuparty1-2"> </div>
+                        <div w3-include-html="afterParty1-2.html"></div>
+
+                        <script>
+                            includeHTML();
+                        </script>
                     </div>
 
                     <input id="tab-5a" name="tab" type="radio" class="tab-input" />
                     <div class="tab-item">
-
+                        <div w3-include-html="afterParty2-2.html"></div>
                     </div>
 
                     <input id="tab-6" name="tab" type="radio" class="tab-input" />
@@ -1137,17 +583,5 @@
 
 
 </body>
-
-</html>
-
-</html>
-
-</html>
-
-</html>
-
-</html>
-
-</html>
 
 </html>
