@@ -194,6 +194,10 @@
         .cucu {
             color: #BD1455;
         }
+        
+        .cucu-bg {
+            background-color: #BD1455;
+        }
     </style>
 
     <script>
@@ -305,7 +309,7 @@
 
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
-        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item  w3-center w3-padding-32 w3-hover-pink">Dragvesti</a>
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item  w3-center w3-padding-32 w3-hover-pink">X</a>
         <label for="tab-1" onclick="w3_close()" class="w3-bar-item  w3-center w3-padding-16 w3-hover-pink">CucuConfessions</label>
         <label for="tab-2" onclick="w3_close()" class="w3-bar-item  w3-center w3-padding-16 w3-hover-pink">#CucuFantarts</label>
         <label for="tab-3" onclick="w3_close()" class="w3-bar-item  w3-center w3-padding-16 w3-hover-pink">Meet and greet </label>
@@ -317,10 +321,11 @@
     </nav>
 
     <!-- Top menu on small screens -->
-    <header class="w3-container w3-top w3-white w3-xlarge w3-padding">
+    <header class="w3-container w3-top w3-white w3-large w3-padding w3-card-2">
         <!-- <a href="javascript:void(0)" class="w3-left  w3-white w3-padding" data-toggle="modal" data-target="#modal-fullscreen">⁝</a> -->
-        <span class="w3-left w3-padding">Fan art</span>
+        <label for="tab-1" class="w3-left w3-padding">CucuConfessions</label>
         <a href="javascript:void(0)" class="w3-right w3-white" onclick="w3_open()">☰</a>
+        <label for="tab-3" class="w3-right w3-white"><img src="camara.svg" width="32px " height="32px " alt="camara" class=" "></label>
     </header>
 
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -329,10 +334,10 @@
     <!-- Modal for full size images on click-->
     <div class="w3-container">
     </div>
-    <div id="modal01" class="w3-modal w3-white" style="padding-top:0" onclick="this.style.display='none'">
+    <div id="modal01" class="w3-modal cucu-bg w3-pink" style="padding-top:0" onclick="this.style.display='none'">
         <span class=" w3-xlarge w3-display-topright">×</span>
         <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" class="w3-image img" loading="lazy " class="lazy ">
+            <img id="img01" class="w3-image lazy img-cucu " loading="lazy ">
             <p id="caption"></p>
         </div>
     </div>
@@ -346,7 +351,6 @@
             <div class="  w3-center ">
                 <div class="container-name  ">
                     <div class="box ">
-
 
                     </div>
                 </div>
@@ -370,7 +374,6 @@
 
         <div class="modal fade modal-fullscreenx " id="alertas " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel " aria-hidden="true ">
             <div class="modal-dialog ">
-
                 <div class="modal-content ">
                     <div class="modal-body ">
                         <button type="button " class="close " data-dismiss="modal " aria-hidden="true ">&times;</button>
@@ -385,8 +388,7 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js'></script>
 
 
-        <!--    
-    ******************************************** ˆ⩌ˆ ****************************************************************** -->
+        <!--  ******************************************** ˆ⩌ˆ ****************************************************************** -->
         <div class="containerx ">
 
             <div>
@@ -410,7 +412,7 @@
                                 <a href="# " class="w3-bar-item  w3-hover-pink ">«</a>
                                 <a href="# " class="w3-bar-item w3-pink w3-hover-pink  ">1</a>
                                 <a href="# " class="w3-bar-item w3-hover-pink ">2</a>
-                                <label for="tab-3">Meet and greet<img src="camara.svg" width="32px " height="32px " alt="camara" cñass="w3-bar-item w3-pink w3-hover-pink "></label>
+                                <label for="tab-3">Meet and greet<img src="camara.svg" width="32px " height="32px " alt="camara" class="w3-bar-item w3-pink w3-hover-pink "></label>
                                 <a href="# " class="w3-bar-item w3-hover-pink ">3</a>
                                 <a href="# " class="w3-bar-item  w3-hover-pink ">»</a>
                             </div>
@@ -447,15 +449,719 @@
                     <input id="tab-2" name="tab" type="radio" class="tab-input" />
                     <div class="tab-item">
                         <main class="container-publicacionesX w3-containerX ">
-                            <div w3-include-html="cucuFanarts.html "></div>
+                            <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> #CucuFantarts</h2>
+
+                            <div style="list-style-type: none;margin-left: 10px; margin-right: 13px; ">
+
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (1).gif" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (1).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (2).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (2).png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (3).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (3).png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (4).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (4).png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (5).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (5).png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (6).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (6).png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (8).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (8).png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (11).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (12).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (14).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (17).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (19).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (20).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (21).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (22).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (23).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (24).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (25).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (26).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (27).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (28).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (29).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (30).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (32).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (33).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (34).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (35).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (36).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (37).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (39).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (40).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (41).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (43).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (51).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (52).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (53).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (54).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (55).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (56).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (57).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (58).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (59).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (60).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (61).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (62).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (63).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (64).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (65).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (66).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (67).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (68).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (69).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cucu (70).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cynthia lee fontaine cast rupauls drag race.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cynthia lee fontaine y katya.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cynthia_lee.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/cynthia-lee-fontaine.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/drankota cynthia lee fontaine.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/drankota cynthia lee fontaine.png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/meet and great cdmx.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/playera de cynthia lee fontaine are you ready for my cucu.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy "
+                                                class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/rupauls-drage-race-season-8.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/cucuFanarts/viewing party premiere rupauls drag race.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix "></div>
+
+
+
                         </main>
                     </div>
 
-                    <input id="tab-3 " name="tab " type="radio " class="tab-input " />
+                    <input id="tab-3" name="tab" type="radio" class="tab-input" />
                     <div class="tab-item ">
                         <main class="container-publicacionesX w3-containerX ">
                             <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> Meet and greet</h2>
-                            <div w3-include-html="meet-and-greet.html "></div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (1).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (2).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (3).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (4).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (5).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (6).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (7).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (8).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (9).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (10).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (11).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (12).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (13).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (14).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (15).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (16).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (17).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (18).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (19).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (20).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (21).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (22).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (23).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (24).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (25).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (26).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (27).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (28).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (29).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (30).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (31).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (32).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (33).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (34).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (35).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (36).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (37).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (38).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (39).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (40).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (41).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (42).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (43).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (44).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (45).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (46).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (47).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (48).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (49).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (50).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (51).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (52).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (53).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (54).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (55).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (56).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (57).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (58).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (59).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (60).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (61).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (62).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (63).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (64).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (65).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (66).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
+                            <div class="responsiveg ">
+                                <div class="gallery ">
+                                    <p><img src="img/meet-and-greet/29-julio-2016 (67).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                </div>
+                            </div>
                         </main>
                     </div>
 
@@ -478,16 +1184,362 @@
 
                     <input id="tab-5" name="tab" type="radio" class="tab-input" />
                     <div class="tab-item">
-                        <div w3-include-html="afterParty1-2.html"></div>
+                        <main class="container-publicacionesX w3-containerX ">
+                            <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> After party en el Arrabal, CDMX #CucuParty</h2>
 
-                        <script>
-                            includeHTML();
-                        </script>
+                            <div style="list-style-type: none;margin-left: 10px; margin-right: 13px; ">
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (1).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (2).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (3).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (4).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (5).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (6).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (7).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (8).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (9).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (10).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (11).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (12).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (13).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (14).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (15).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (16).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (17).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (18).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (19).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (20).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (21).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (22).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (23).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (24).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (25).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (26).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (27).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (28).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (29).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (30).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (31).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (32).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (33).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (34).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (35).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (36).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (37).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (38).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (39).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (40).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (41).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (42).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (43).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (44).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (45).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (46).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (47).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (48).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (49).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (50).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (51).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (52).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (53).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (54).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (55).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (56).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (57).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (58).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (59).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (60).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (61).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (62).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (63).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/after/cucuparty (64).webp" class="img " width="600 " height="400 " onclick="onClick(this) " alt="After party en el Arrabal, CDMX #CucuParty" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Pagination After
+                            <div class="w3-center w3-padding-32 ">
+                                <div class="w3-bar ">
+                                    <label class="w3-bar-item   w3-hover-pink  ">«</label>
+                                    <label for="tab-5" class="w3-bar-item w3-pink  w3-hover-pink  ">1</label>
+                                    <label for="tab-5a" class="w3-bar-item  w3-hover-pink  ">2</label>
+                                    <label class="w3-bar-item  w3-hover-pink  ">»</label>
+                                </div>
+                            </div> -->
+                        </main>
                     </div>
 
                     <input id="tab-5a" name="tab" type="radio" class="tab-input" />
                     <div class="tab-item">
-                        <div w3-include-html="afterParty2-2.html"></div>
+                        <main class="container-publicacionesX w3-containerX ">
+                            <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> After party en el Arrabal, CDMX #CucuParty</h2>
+
+                            <div style="list-style-type: none;margin-left: 10px; margin-right: 13px; ">
+
+                            </div>
+                            <!-- Pagination After -->
+                            <div class="w3-center w3-padding-32 ">
+                                <div class="w3-bar ">
+                                    <a href="# " class="w3-bar-item  w3-hover-pink ">«</a>
+                                    <a href="# " class="w3-bar-item  w3-hover-pink  ">1</a>
+                                    <a href="# " class="w3-bar-item w3-pink w3-hover-pink ">2</a>
+                                    <a href="# " class="w3-bar-item  w3-hover-pink ">»</a>
+                                </div>
+                            </div>
+                        </main>
                     </div>
 
                     <input id="tab-6" name="tab" type="radio" class="tab-input" />
@@ -496,12 +1548,541 @@
                             <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> Material de promoción</h2>
 
                             <div style="list-style-type: none;margin-left: 10px; margin-right: 13px; ">
+
+
                                 <div class="responsiveg ">
                                     <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/chynthia lee fontaine art.png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
+                                        <p><img src="img/promo/niiha-villant.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/nina-de-la-fuente.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/ok.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Paris promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/paris-bang-bang.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/poster cucuconfessions drag race.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/precios.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/prin-1.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/prin-2.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/prin-3 (1).jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Rhoma promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/rhoma.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/rhonda-sullivan.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/rita-malverde.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/rita-sioux.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Roberto promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/roberto-cabral.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Scarlet promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/scarlett-unique.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Sioux promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Sophia promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/sophia-nari.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Sugar promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/sugar-stone.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/tarjeta presentación 4x4 cynthia lee fontaine rupauls drag race season 8.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/tarjeta-frente.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/tarjeta-vuelta.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/ubicacion.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/ubicación.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/vagina davis en cucu confessions.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/vagina-davis.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/vamo a calmarnos cynthia lee fontaine pokemon.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/vamo a conocer.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/vamos-al-teatro-promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/vip.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/ZAFIRO.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/mia-pop.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/a Prensa promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/adquiere-tus-boletos.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/adquiere-tus-boletos-boletia.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/adquiere-tus-boletos-en.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/adquiere-tus-boletos-erotika.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/AGATHA.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/agatha-toro.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/banner cynthia lee fontaine cdmx impulse mexico.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/BECKY.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/becky-d-vich.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/billete_200_pesos_2008.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Blondie promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/blondie-barragan.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/boleto cdmx miss congeniality cynthia lee fontaine rupauls drag race season 8.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy "
+                                                class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/boleto-general.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/boleto-invitacion-drag.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/boleto-mg.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/boleto-verde.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/boleto-vip.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Bree promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/bree.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/butacas de teatro hipodromo condesa cdmx mexico show.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/butacas de teatro hipodromo condesa cdmx mexico.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Camila Promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/camila-serdan.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/cartel-1.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/cartel-2.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/cartel-3.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/cartel-4.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/cartel-5.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/cg travel invita.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/coco-montrese-yara-sofia-joslyn-fox-cynthia-lee-fontaine-cdmx-mexico.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/cucuparty.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/cuidame.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Cynthia oficial.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/deborah la grande promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/drag-moon.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/dragon ball.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/eat it.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Erotika Amberes1.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Erotika Amberes2.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/erotika-amberes.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/erotika-amberes-dragvesti.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/ese momento.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Finlandia promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/finlandia-snow.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/formas-de-pago.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/formas-de-pago-adquiere-tus-boletos.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/foto-CuCuCONFESSIONS.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/gracias-por-asistir.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/hazte-la-prueba-impulse-cdmx.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/hazte-la-prueba-impulse-cdmx-dragvesti.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Ingrid promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/ingrid-fortuna.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/invita general con precios.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/invita general.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/invitacion.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Iris promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/iris-xc-queen.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/lennox.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/lolitea.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/lolitea1.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/lolitea2.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/lolitea-frikiplaza.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/m&g cynthia lee fontaine cdmx impulse mexico.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/M_G.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/M6G.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Malverde promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
+                                    </div>
+                                </div>
+                                <div class="responsiveg ">
+                                    <div class="gallery ">
+                                        <p><img src="img/promo/Mia promo.jpg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Material de promoción" loading="lazy " class="lazy "></p>
                                     </div>
                                 </div>
                             </div>
+
                         </main>
                     </div>
 
@@ -510,13 +2091,7 @@
                         <main class="container-publicacionesX w3-containerX ">
                             <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> Notas relacionadas</h2>
 
-                            <div style="list-style-type: none;margin-left: 10px; margin-right: 13px; ">
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/chynthia lee fontaine art.png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                            </div>
+
                         </main>
                     </div>
 
@@ -525,13 +2100,7 @@
                         <main class="container-publicacionesX w3-containerX ">
                             <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> Playlist</h2>
 
-                            <div style="list-style-type: none;margin-left: 10px; margin-right: 13px; ">
-                                <div class="responsiveg ">
-                                    <div class="gallery ">
-                                        <p><img src="img/cucuFanarts/chynthia lee fontaine art.png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                    </div>
-                                </div>
-                            </div>
+
                         </main>
                     </div>
                 </div>
@@ -543,7 +2112,7 @@
 
 
             <div style=" width: 100%; height: 10px; background: rgb(255, 255, 255); position: fixed; bottom: 0; width: 100%; margin: 0; overflow: hidden; position: fixed; bottom: 0; ">
-                <div id="myBar " style=" height: 10px; width: 0%; background: linear-gradient( to right, #18487D, #18487D, #005677, #18487D, #18487D, #005677, #18487D, #18487D, #005677); background-position: center 0%; animation: background-slide 25s
+                <div id="myBar " style=" height: 10px; width: 0%; background: linear-gradient( to right, #ffe6f0, #ffcce0, #ffb3d1, #ff99c2, #ff80b3,#ff66a3, #ff4d94, #ff3385,#ff1a75, #ff0066,		 #e6005c,		 #cc0052, 		 #b30047, 		 #99003d, 		 #800033, 		 #660029, #4d001f, #330014); background-position: center 0%; animation: background-slide 25s
                         infinite linear; "></div>
             </div>
             <!-- ****************************************************************** SCRIPTS ****************************************************************** -->
