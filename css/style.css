@@ -8,7 +8,7 @@ img {
     height: auto;
 }
 
-.cta {
+. .cta {
     background: #F65D7C;
     color: #fff;
     padding: 15px;
@@ -1836,7 +1836,7 @@ video {
     padding: 3rem;
     min-height: 80vh;
     /*  background-color: #1B1C24;
-    background-image: url("img/lamp-icon-black-1B1C24.svg");
+    background-image: url("img/cynthia-lee-fontaine-cucu.webp");
      background-color: #1086B5; 
     background-image: url("lamp-icon.svg"); */
     align-items: center;
@@ -3082,6 +3082,8 @@ a {
 
 .tab-input {
     display: none;
+    width: auto;
+    height: 95%;
 }
 
 .tab-item {
