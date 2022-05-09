@@ -257,6 +257,61 @@
 </head>
 
 <body>
+    <style>
+        .c-switch {
+            padding: 3px;
+            border-radius: 50px;
+            background: #0a8ccd;
+            position: fixed;
+            bottom: 15px;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            z-index: 0;
+        }
+        
+        .c-switch__highlight {
+            width: 50%;
+            position: absolute;
+            top: 3px;
+            left: 0;
+            bottom: 3px;
+            background: #00aaff;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+        
+        .c-switch button {
+            position: relative;
+            padding: 0.875em 1.75em;
+            font-weight: bold;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+            background: none;
+            border-radius: 50px;
+            border: 0;
+            outline: none;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        
+        .c-switch button:hover,
+        .c-switch button:focus,
+        .c-switch button.is-active {
+            color: white;
+        }
+    </style>
+    <div class="c-switch nav-footer">
+        <div class="c-switch__highlight"></div>
+
+        <button data-value="first">  <label for="tab-3">Galeria</label></button>
+        <button data-value="second">Second</button>
+        <button data-value="third">3</button>
+        <button data-value="third">Fourth option</button>
+    </div>
+    <!-- partial -->
+    <script src="./barscript.js"></script>
+
     <!-- <button data-toggle="modal" data-target="#modal-fullscreen"> <a class="w3-button  w3-circle  " style="position:fixed;top:110px;right:80px; "><i class="fas fa-ellipsis-v"></i></a> </button> -->
 
     <!-- Modal-Fullscreen -->
@@ -515,17 +570,6 @@
                                     <p><img src="img/cynthia-lee-fontaine-cucu.png" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
                                 </div>
                             </div>
-                            <div class="responsiveg ">
-                                <div class="gallery ">
-                                    <p><img src="img/audifonos.svg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                </div>
-                            </div>
-                            <div class="responsiveg ">
-                                <div class="gallery ">
-                                    <p><img src="img/camara.svg" class="img " width="600 " height="400 " onclick="onClick(this) " alt="Chynthia Lee Fontaine #CucuFantarts " loading="lazy " class="lazy "></p>
-                                </div>
-                            </div>
-
 
 
                         </main>
