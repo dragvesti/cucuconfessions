@@ -2693,3 +2693,546 @@ a {
         text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
     }
 }
+
+.container-iframe {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 100%;
+    /* 1:1 Aspect Ratio */
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.responsive5 {
+    padding: 0 6px;
+    margin: 6px 0;
+    float: left;
+    width: 20%;
+    display: grid;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive5 {
+        width: 50%;
+        margin: 6px 0;
+        padding: 0 6px;
+        display: grid;
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .responsive5 {
+        width: 50%;
+        margin: 6px 0;
+        padding: 0 6px;
+        display: grid;
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive5 {
+        width: 50%;
+        /*  margin: 6px 0;*/
+        margin: 6px 0;
+        padding: 0 6px;
+        display: grid;
+        width: 25%;
+    }
+}
+
+.img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.responsiveg {
+    padding: 0 6px;
+    margin: 6px 0;
+    float: left;
+    width: 20%;
+    display: grid;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsiveg {
+        width: 50%;
+        margin: 6px 0;
+        padding: 0 6px;
+        display: grid;
+        width: 33.33%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .responsiveg {
+        width: 50%;
+        margin: 6px 0;
+        padding: 0 6px;
+        display: grid;
+        width: 33.33%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsiveg {
+        width: 50%;
+        margin: 6px 0;
+        padding: 0 6px;
+        display: grid;
+        width: 50%;
+    }
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+}
+
+.img-cucu {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.rosa {
+    color: #F06365;
+}
+
+.pink {
+    color: #EC344D;
+}
+
+.cucu {
+    color: #BD1455;
+}
+
+.container-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-name .box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-name .box .title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.container-name .box .title .block {
+    width: 0%;
+    height: inherit;
+    /*  
+background: linear-gradient(45deg, #042461 0%, rgba(225, 5, 34, 0) 70%), linear-gradient(135deg, #340447 10%, rgba(49, 5, 209, 0) 80%), linear-gradient(225deg, #0f053a 10%, rgba(10, 219, 216, 0) 80%), linear-gradient(315deg, #050813 100%, rgba(9, 245, 5, 0) 70%);
+background: linear-gradient( to right, #e91e63, #d4232c, #ce6f30, #e9d51e, #23d458, #1ec0e9, #981ee9, #23d458, #1ea9e9); */
+    background-position: center 0%;
+    animation: background-slide 1s infinite linear;
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    display: flex;
+}
+
+.container-name .box .role {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-top: -10px;
+}
+
+.container-name .box .role .block {
+    width: 0%;
+    height: inherit;
+    background: linear-gradient( to right, #e91e63, #d4235e, #ce3065, #e91e63, #d4235e, #e91e63);
+    background-position: center 0%;
+    animation: background-slide 1s infinite linear;
+    position: absolute;
+    animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 2s;
+    display: flex;
+}
+
+.container-name .box .role p {
+    animation: secFadeIn 2s forwards;
+    animation-delay: 3.2s;
+    opacity: 0;
+    font-weight: 800;
+    font-family: "Lato";
+    color: #ddcccc;
+    font-size: 20px;
+    letter-spacing: 6px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 33px;
+}
+
+@keyframes mainBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes secBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes secFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+
+/* small */
+
+@media (max-width:600px) {
+    .container-name .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-name .box .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-name .box .title .block {
+        width: 0%;
+        height: inherit;
+        background: linear-gradient(45deg, #042461 0%, rgba(225, 5, 34, 0) 70%), linear-gradient(135deg, #340447 10%, rgba(49, 5, 209, 0) 80%), linear-gradient(225deg, #0f053a 10%, rgba(10, 219, 216, 0) 80%), linear-gradient(315deg, #050813 100%, rgba(9, 245, 5, 0) 70%);
+        /*   background: linear-gradient( to right, #e91e63, #d4232c, #ce6f30, #e9d51e, #23d458, #1ec0e9, #981ee9, #23d458, #1ea9e9); */
+        background-position: center 0%;
+        animation: background-slide 1s infinite linear;
+        position: absolute;
+        animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+    }
+    .container-name .box .role {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .container-name .box .role .block {
+        width: 0%;
+        background: linear-gradient( to right, #e91e63, #d4235e, #ce3065, #e91e63, #d4235e, #e91e63);
+        background-position: center 0%;
+        animation: background-slide 1s infinite linear;
+        position: absolute;
+        animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+        animation-delay: 2s;
+        display: flex;
+    }
+    .container-name .box .role p {
+        animation: secFadeIn 2s forwards;
+        animation-delay: 3.2s;
+        opacity: 0;
+        font-weight: 800;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+        /*  line-height: 1.5px; */
+        align-items: center;
+    }
+    @keyframes mainBlock {
+        0% {
+            width: 0%;
+            left: 0;
+        }
+        50% {
+            width: 100%;
+            left: 0;
+        }
+        100% {
+            width: 0;
+            left: 100%;
+        }
+    }
+    @keyframes secBlock {
+        0% {
+            width: 0%;
+            left: 0;
+        }
+        50% {
+            width: 100%;
+            left: 0;
+        }
+        100% {
+            width: 0;
+            left: 100%;
+        }
+    }
+    @keyframes secFadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0.5;
+        }
+    }
+}
+
+
+/* small */
+
+@media (max-width:600px) {
+    .w3-hide-small {
+        display: none!important
+    }
+}
+
+
+/* medium */
+
+@media (max-width:992px) and (min-width:601px) {
+    .w3-hide-medium {
+        display: none!important
+    }
+}
+
+
+/* large */
+
+@media (min-width:993px) {
+    .w3-hide-large {
+        display: none!important
+    }
+}
+
+
+/*-------------------------------------------------------------------*/
+
+.background-icon-black-1B1C24 {
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+    background-color: #1B1C24;
+    background-image: url("img/lamp-icon-black-1B1C24.svg");
+    /*  background-color: #1086B5; 
+    background-image: url("lamp-icon.svg"); */
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+p {
+    margin: 0
+}
+
+body {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    margin: 0
+}
+
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+
+.w3-container:after,
+.w3-container:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+@media (max-width:600px) {
+    .w3-hide-small {
+        display: none!important
+    }
+}
+
+@media (min-width:993px) {
+    .w3-hide-large {
+        display: none!important
+    }
+}
+
+@media (max-width:992px) and (min-width:601px) {
+    .w3-hide-medium {
+        display: none!important
+    }
+}
+
+.w3-container {
+    padding: 0.01em 16px
+}
+
+.w3-center {
+    text-align: center!important
+}
+
+.responsive5 {
+    padding: 0 6px;
+    margin: 6px 0;
+    float: left;
+    width: 20%;
+    display: grid;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive5 {
+        width: 50%;
+        margin: 6px 0;
+        padding: 0 6px;
+        display: grid;
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .responsive5 {
+        width: 50%;
+        margin: 6px 0;
+        padding: 0 6px;
+        display: grid;
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive5 {
+        width: 50%;
+        margin: 6px 0;
+        padding: 0 6px;
+        display: grid;
+        width: 25%;
+    }
+}
+
+@media (max-width:600px) {
+    .hide-small {
+        display: none!important
+    }
+}
+
+@media (min-width:993px) {
+    .hide-large {
+        display: none!important
+    }
+}
+
+@media (max-width:992px) and (min-width:601px) {
+    .hide-medium {
+        display: none!important
+    }
+}
+
+.tabs {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabs>label {
+    order: 1;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0;
+    padding: 0 20px 0 20px;
+    font-weight: bold;
+}
+
+.tabs>input[type="radio"] {
+    display: none;
+}
+
+.tabs>input[type="radio"]:checked+label {}
+
+.tabs>input[type="radio"]:checked+label+div {
+    display: block;
+}
+
+.tabs>div {
+    order: 7;
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    height: 100%;
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.form-control-dark {
+    color: #fff;
+    background-color: var(--bs-dark);
+    border-color: var(--bs-gray);
+}
+
+.form-control-dark:focus {
+    color: #fff;
+    background-color: var(--bs-dark);
+    border-color: #fff;
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.text-small {
+    font-size: 85%;
+}
+
+.dropdown-toggle {
+    outline: 0;
+}
