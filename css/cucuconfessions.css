@@ -4043,3 +4043,21 @@ a:hover {
 .cucu-bg {
     background-color: #BD1455;
 }
+
+.containerOK {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px
+}
+
+
+/* small */
+
+@media (max-width:600px) {
+    .containerOK {
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 50px;
+    }
+}
